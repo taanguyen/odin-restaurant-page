@@ -2,7 +2,7 @@ import { insertInto } from "./utils.js";
 import "./about.css"
 
 export default function renderAbout() {
-    const content = insertInto(document, 'div', 'content');
+    const content = document.getElementById('content');
     console.log("renderAbout is working!")
     let h2 = insertInto(content, 'h2', '', "ALL THE PIZZA. ALL ON ONE PLATE. ALL AWESOME.")
     let divContent = insertInto(content, 'div', 'about-content1');

@@ -1,4 +1,4 @@
-export function insertInto(parent, element, classList, elemHTML = '') {
+export function insertInto(parent, element, classList = '', elemHTML = '') {
     const elem = document.createElement(element);
     elem.innerHTML = elemHTML;
     if (classList.length > 0) {
@@ -14,3 +14,17 @@ export function insertInto(parent, element, classList, elemHTML = '') {
     return elem;
 }
 
+
+export function renderObjWithParent(parent, obj) {
+    for (let key of Object.keys(obj)) {
+        const vals = obj[key];
+        if (Array.isArray(vals)) {
+            for (let val of vals) {
+                insertInto(parent, key, '', val);
+            }
+
+        } else {
+            insertInto(parent, key, '', vals);
+        }
+    }
+}
