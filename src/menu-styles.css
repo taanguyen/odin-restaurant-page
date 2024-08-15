@@ -77,10 +77,12 @@ header button {
 }
 
 .pizza1 {
+    background-position: 25% 25%;
     background-image: url("../assets/menu/aldward-castillo-1.jpg");
 }
 
 .pizza2 {
+    background-position: 80% 60%;
     background-image: url("../assets/menu/aldward-castillo-2.jpg");
 }
 

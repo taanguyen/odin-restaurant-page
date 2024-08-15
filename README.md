@@ -22,3 +22,8 @@ Photo by <a href="https://unsplash.com/@aldwardcv31?utm_content=creditCopyText&u
 
   Photo by <a href="https://unsplash.com/@mrsunflower94?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matteo Vistocco</a> on <a href="https://unsplash.com/photos/pizza-with-meat-toppings-V2gzuCVlRhc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
+
+  Photo by <a href="https://unsplash.com/@alienowicz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Artur Rutkowski</a> on <a href="https://unsplash.com/photos/person-holding-dough-4yzEtTQLdL4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+  Photo by <a href="https://unsplash.com/@lboccardo95?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Luigi Boccardo</a> on <a href="https://unsplash.com/photos/a-person-cutting-a-pizza-DwFq-qSWfCo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
