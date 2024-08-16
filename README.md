@@ -1,3 +1,6 @@
+# Restaurant Page
+Built with Webpack. Design came from [The Federalist Pig](https://www.federalistpig.com/). 
+### Photo Credits
 Photo by <a href="https://unsplash.com/@aditya_sethia_97?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aditya Sethia</a> on <a href="https://unsplash.com/photos/a-pizza-sitting-on-top-of-a-pan-on-a-table-V3gSo9OQKvM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
 
