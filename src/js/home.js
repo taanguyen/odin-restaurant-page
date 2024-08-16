@@ -33,14 +33,16 @@ function renderHero(content) {
 
     const carouselItems = [
         {
+
             h1: 'SPECIAL SAUCE',
             p: 'New Specials just dropped! Spicy pork, Pineapple Medley, Tennessee chicken...and Portobello Pesto ?!',
             button: 'SEE THE SPECIALS'
+
         },
         {
-            h1: 'SPECIAL SAUCE',
-            p: 'New Specials just dropped! Spicy pork, Pineapple Medley, Tennessee chicken...and Portobello Pesto ?!',
-            button: 'SEE THE SPECIALS'
+            h1: 'PORTLY SUPPER CLUB',
+            p: 'A fancy 4-course dine-in experience that will leave you in a carb-filled daze.',
+            button: 'GET YOUR TICKETS'
         }
     ];
 
