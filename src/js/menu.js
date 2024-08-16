@@ -3,6 +3,7 @@ import "../css/menu.css"
 
 export default function renderMenu() {
     const content = document.getElementById('content');
+    content.classList.add('menu-content');
     renderMenuIntro(content);
     renderMenuItems(content);
     renderSpecials(content);

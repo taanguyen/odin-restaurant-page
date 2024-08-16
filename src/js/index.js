@@ -90,7 +90,6 @@ function renderHomeSpecials(content) {
         const homeSpecialText = insertInto(homeSpecial, 'div', 'home-special-text');
         renderObjWithParent(homeSpecialText, obj);
     }
-
 }
 
 function renderHomeMenu(content) {
