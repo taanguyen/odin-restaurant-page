@@ -109,7 +109,7 @@ header button {
     background-size: cover;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../assets/home/ivan-torres.jpg");
+        url("../../assets/home/ivan-torres.jpg");
 }
 
 .carousel2 {
@@ -117,7 +117,7 @@ header button {
     background-repeat: no-repeat;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../assets/home/aditya.jpg");
+        url("../../assets/home/aditya.jpg");
 }
 
 .home-specials {
@@ -148,14 +148,13 @@ header button {
 .home-special-img {
     height: 60vh;
     width: 100%;
-    background-image: url('../assets/home/sam-moghadam-khamseh.jpg');
+    background-image: url('../../assets/home/sam-moghadam-khamseh.jpg');
     background-size: cover;
 }
 
 .home-special:nth-child(2) .home-special-img {
-    background-image: url('../assets/home/jonas-kakaroto.jpg');
+    background-image: url('../../assets/home/jonas-kakaroto.jpg');
 }
-
 
 .home-special button,
 .home-menu-text button {
@@ -193,5 +192,5 @@ header button {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     height: 100vh;
-    background-image: url("../assets/home/nahima-aparicio.jpg");
+    background-image: url("../../assets/home/nahima-aparicio.jpg");
 }

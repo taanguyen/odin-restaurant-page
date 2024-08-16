@@ -1,5 +1,5 @@
-import { insertInto, renderObjWithParent } from "./utils";
-import "./menu-styles.css"
+import { insertInto, renderObjWithParent } from "../js/utils.js";
+import "../css/menu.css"
 
 export default function renderMenu() {
     const content = document.getElementById('content');
@@ -17,59 +17,74 @@ function renderMenuIntro(content) {
 }
 
 function renderMenuItems(content) {
-    function renderMenuItem(obj, i) {
+    function renderMenuItem(title, text, i) {
         const menuItem = insertInto(menuItems, 'div', 'menu-item');
-        insertInto(menuItem, 'div', `menu-item-img pizza${i + 1}`);
-        renderObjWithParent(menuItem, obj);
+        const menuDesc = insertInto(menuItem, 'div', `menu-item-img pizza${i + 1}`);
+        renderObjWithParent(menuDesc, title);
+        renderObjWithParent(menuItem, text);
     }
 
     const menuItems = insertInto(content, 'div', 'menu-items');
-    const menuItemContents = [
+    const menuItemTexts = [
+        {
+            p: `Classic margherita pizza with basil, freshly-grated parmesan, harvest tomatoes, and bubbly mozzarella.`
+        }, {
+            p: `Basil, spinach, mozzarella chunks, and BBQ sauce. Topped with salmon, this pie will surely delight your taste buds.`
+        }, {
+            p: `All your favorite chocolates in one place - M&M's, Reese's pieces, chocolate pretzels, chocolate chips.`
+        }, {
+            p: `Plenty pepperoni for a perfect plate of pleasant, palatable pie.`
+        }
+    ]
+    const menuItemTitles = [
         {
             h2: `Yummy Tummy / $15`,
-            p: `Classic margherita pizza with basil, freshly-grated parmesan, harvest tomatoes, and bubbly mozzarella.`
         },
         {
             h2: `BBQ Basil / $15`,
-            p: `Basil, spinach, mozzarella chunks, and BBQ sauce. Topped with salmon, this pie will surely delight your taste buds.`
         },
         {
             h2: `Chococalate Craze / $10`,
-            p: `All your favorite chocolates in one place - M&M's, Reese's pieces, chocolate pretzels, chocolate chips.`
         },
         {
             h2: `Peppy Pie / $10`,
-            p: `Plenty pepperoni for a perfect plate of pleasant, palatable pie.`
         }
     ];
 
-    for (let i = 0; i < menuItemContents.length; i++) {
-        renderMenuItem(menuItemContents[i], i);
+    for (let i = 0; i < menuItemTitles.length; i++) {
+        renderMenuItem(menuItemTitles[i], menuItemTexts[i], i);
     }
 }
 
 function renderSpecials(content) {
-    insertInto(content, 'h1');
+    insertInto(content, 'h1', '', 'SPECIALS');
     const specialItems = insertInto(content, 'div', 'special-items');
 
-    const specials = [
+    const specialTexts = [
         {
-            h2: `Haiwaiian Medley / $20`,
             p: `Grilled pineapples drizzled in hot sauce and topped with cilantro. Sprinkled with sweet onions.`
-        },
-        {
-            h2: `Super Duper Sausages / $20`,
+        }, {
             p: `Sausages seasoned with garlic, chipotle sauce, and served with chile.`
         }
     ];
 
-    function renderSpecial(obj, i) {
+    const specialTitles = [
+        {
+            h2: `Haiwaiian Medley / $20`,
+        },
+        {
+            h2: `Super Duper Sausages / $20`
+        }
+    ];
+
+    function renderSpecial(title, text, i) {
         const specialItem = insertInto(specialItems, 'div', 'special-item');
         const specialDesc = insertInto(specialItem, 'div', `menu-item-img special${i + 1}`);
-        renderObjWithParent(specialItem, obj);
+        renderObjWithParent(specialDesc, title);
+        renderObjWithParent(specialItem, text);
     }
 
-    for (let i = 0; i < specials.length; i++) {
-        renderSpecial(specials[i], i);
+    for (let i = 0; i < specialTitles.length; i++) {
+        renderSpecial(specialTitles[i], specialTexts[i], i);
     }
 }

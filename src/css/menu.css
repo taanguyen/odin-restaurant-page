@@ -9,7 +9,6 @@ body {
     background-color: rgb(255, 215, 0);
     font-family: 'Tilt Warp', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
-    padding: 20px;
     text-align: center;
 }
 
@@ -78,26 +77,26 @@ header button {
 
 .pizza1 {
     background-position: 25% 25%;
-    background-image: url("../assets/menu/aldward-castillo-1.jpg");
+    background-image: url("../../assets/menu/aldward-castillo-1.jpg");
 }
 
 .pizza2 {
     background-position: 80% 60%;
-    background-image: url("../assets/menu/aldward-castillo-2.jpg");
+    background-image: url("../../assets/menu/aldward-castillo-2.jpg");
 }
 
 .pizza3 {
-    background-image: url("../assets/menu/aldward-castillo-3.jpg");
+    background-image: url("../../assets/menu/aldward-castillo-3.jpg");
 }
 
 .pizza4 {
-    background-image: url("../assets/menu/aldward-castillo-4.jpg");
+    background-image: url("../../assets/menu/aldward-castillo-4.jpg");
 }
 
 .special1 {
-    background-image: url("../assets/menu/chad-montano-MqT0asuoIcU-unsplash.jpg");
+    background-image: url("../../assets/menu/chad-montano-MqT0asuoIcU-unsplash.jpg");
 }
 
 .special2 {
-    background-image: url("../assets/menu/matteo-vistocco-V2gzuCVlRhc-unsplash.jpg");
+    background-image: url("../../assets/menu/matteo-vistocco-V2gzuCVlRhc-unsplash.jpg");
 }

@@ -1,33 +1,28 @@
-import "./styles.css";
-import renderAbout from "./about.js";
-import renderMenu from "./menu.js";
-import { insertInto, renderObjWithParent } from "./utils.js";
+import "../css/template.css";
+import renderAbout from "../js/about.js";
+import renderMenu from "../js/menu.js";
+import { insertInto, renderObjWithParent } from "../js/utils.js";
 const aboutBtn = document.getElementById("about");
 const homeBtn = document.getElementById("home");
 const menuBtn = document.getElementById('menu');
 
 aboutBtn.addEventListener('click', () => {
     document.getElementById('content').innerHTML = '';
-    console.log('rendering about')
     renderAbout();
 });
 
 homeBtn.addEventListener('click', () => {
     document.getElementById('content').innerHTML = '';
-    console.log('rendering home')
     renderHome();
-})
+});
 
 menuBtn.addEventListener('click', () => {
     document.getElementById('content').innerHTML = '';
-    console.log('rendering menu');
     renderMenu();
-})
+});
 
 function renderHome() {
     const content = document.getElementById('content');
-    console.log(content);
-    console.log('render home!!!')
     renderHero(content);
     renderHomeSpecials(content);
     renderHomeMenu(content);
@@ -38,13 +33,11 @@ function renderHome() {
     const slickDots = document.querySelectorAll('.slick-dots button');
 
     slickDots[0].addEventListener("click", e => {
-        console.log("car1 clicked")
         carouselItems[1].style.display = "none";
         carouselItems[0].style.display = "flex";
     });
 
     slickDots[1].addEventListener("click", e => {
-        console.log('car2 clicked')
         carouselItems[0].style.display = "none";
         carouselItems[1].style.display = "flex";
     });
