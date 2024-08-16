@@ -3,6 +3,7 @@ import "../css/about.css"
 
 export default function renderAbout() {
     const content = document.getElementById('content');
+    content.classList.remove('menu-content');
     let h2 = insertInto(content, 'h2', '', "ALL THE PIZZA. ALL ON ONE PLATE. ALL AWESOME.")
     let divContent = insertInto(content, 'div', 'about-content');
 

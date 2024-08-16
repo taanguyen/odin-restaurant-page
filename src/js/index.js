@@ -23,6 +23,7 @@ menuBtn.addEventListener('click', () => {
 
 function renderHome() {
     const content = document.getElementById('content');
+    content.classList.remove('menu-content');
     renderHero(content);
     renderHomeSpecials(content);
     renderHomeMenu(content);
