@@ -1,12 +1,5 @@
-export function insertInto(parent, element, classList = '', elemHTML = '') {
-    const elem = document.createElement(element);
-    elem.innerHTML = elemHTML;
-    if (classList.length > 0) {
-        const classes = classList.split(' ');
-        for (let classNm of classes) {
-            elem.classList.add(classNm);
-        }
-    }
+export function insertInto(parent, tag, classList = '', elemHTML = '') {
+    const elem = createElement(tag, classList, elemHTML);
     if (parent == document) {
         parent = parent.body;
     }
@@ -27,4 +20,16 @@ export function renderObjWithParent(parent, obj) {
             insertInto(parent, key, '', vals);
         }
     }
+}
+
+export function createElement(tag, classList = '', elemHTML = '') {
+    const elem = document.createElement(tag);
+    elem.innerHTML = elemHTML;
+    if (classList.length > 0) {
+        const classes = classList.split(' ');
+        for (let classNm of classes) {
+            elem.classList.add(classNm);
+        }
+    }
+    return elem;
 }
